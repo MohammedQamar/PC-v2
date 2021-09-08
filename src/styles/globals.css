@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family: "Merriweather", serif;
   font-size: clamp(16px, 2.3vmin, 17px);
+  box-sizing: border-box;
 }
 h1 {
   font-size: clamp(1.75rem, 5vw, 2.5rem);
@@ -67,4 +68,19 @@ html::-webkit-scrollbar-thumb {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  display: inline-block;
+  padding: 0.8em 1.6em;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: var(--button-bcg);
+  color: var(--button-font);
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  border-bottom: 3px solid #c20027;
+  text-transform: uppercase;
 }
